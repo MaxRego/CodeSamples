@@ -1,0 +1,9 @@
+DROP TABLE Motif_count;
+DROP TABLE Word_count;
+DROP TABLE Motif_pos;
+DROP TABLE Word_pos;
+DROP TABLE Sequence;
+DROP TABLE Word;
+DROP TABLE Cluster;
+DROP TABLE Job;
+SOURCE create_tables.txt;
