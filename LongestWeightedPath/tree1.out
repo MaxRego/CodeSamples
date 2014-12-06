@@ -1,0 +1,6 @@
+
+(A 0(B 1(C 2)(D -3))(E -5(F -7(G 15(H 30)(I 45)))(J 17(K 20)(L 1)(M 2))))
+Number of Nodes = 13
+Maximum distance in the tree is = 
+90
+From I to K
