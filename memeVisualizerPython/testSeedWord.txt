@@ -1,0 +1,6 @@
+>seedWord:CCGGT
+CCGGT
+CCGGA
+>seedWord:TTAA
+TTAA
+TTAT

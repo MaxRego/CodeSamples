@@ -1,0 +1,20 @@
+PROGRAM: memeVisualizer-v2.py
+
+Needed Imports:
+import sys
+import libxml2 	      - use software center to install libxml2		
+import libxslt	
+from Bio import SeqIO - use software center to install BioPython
+
+Instructions:
+>> python memeVisualizer-v2.py test.fa testSeedWord.txt job1
+
+test.fa = the fasta file
+
+testSeedWord.txt = the SeedWord file, formatted like 
+>seedWord:CCGGT
+CCGGT
+CCGGA
+
+job1 = job name 
+

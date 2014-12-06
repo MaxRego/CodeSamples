@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="mhmmscan-to-html.xsl"?>
+<cis-element-search
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+xmlns="http://zlab.bu.edu/schema/cisml"
+xmlns:mem="http://noble.gs.washington.edu/meme">
+<program-name>MEME-visualizer</program-name>
+<parameters>
+<pattern-file>test.fa</pattern-file>
+<sequence-file>test.fa</sequence-file>
+<pattern-pvalue-cutoff>0.0005</pattern-pvalue-cutoff>
+<sequence-pvalue-cutoff>1</sequence-pvalue-cutoff>
+</parameters>
+<multi-pattern-scan score="16.1782" pvalue="nan">
+<pattern accession="CCGGT" name="CCGGT">
+	<scanned-sequence accession="seq1" name="seq1">
+		<matched-element start="5" stop="9" pvalue="0">
+			<sequence>CCGGT</sequence>
+		</matched-element>
+	</scanned-sequence>
+</pattern>
+
+<pattern accession="CCGGT" name="CCGGT">
+	<scanned-sequence accession="seq1" name="seq1">
+		<matched-element start="15" stop="19" pvalue="0">
+			<sequence>CCGGT</sequence>
+		</matched-element>
+	</scanned-sequence>
+</pattern>
+
+<pattern accession="CCGGT" name="CCGGT">
+	<scanned-sequence accession="seq1" name="seq1">
+		<matched-element start="39" stop="43" pvalue="0">
+			<sequence>CCGGT</sequence>
+		</matched-element>
+	</scanned-sequence>
+</pattern>
+
+<pattern accession="TTAA" name="TTAA">
+	<scanned-sequence accession="seq1" name="seq1">
+		<matched-element start="22" stop="25" pvalue="0">
+			<sequence>TTAA</sequence>
+		</matched-element>
+	</scanned-sequence>
+</pattern>
+
+<mem:match cluster-id="cluster-1" seq-name="seq1" start="1" stop="43" evalue="nan" qvalue="nan">AAACCCGGTGGAAACCGGTTTTTAAGGATATAGACCCCCCGGA
+</mem:match>
+</multi-pattern-scan>
+
+<multi-pattern-scan score="16.1782" pvalue="nan">
+<pattern accession="TTAA" name="TTAA">
+	<scanned-sequence accession="seq2" name="seq2">
+		<matched-element start="7" stop="10" pvalue="0">
+			<sequence>TTAA</sequence>
+		</matched-element>
+	</scanned-sequence>
+</pattern>
+
+<pattern accession="TTAA" name="TTAA">
+	<scanned-sequence accession="seq2" name="seq2">
+		<matched-element start="44" stop="47" pvalue="0">
+			<sequence>TTAA</sequence>
+		</matched-element>
+	</scanned-sequence>
+</pattern>
+
+<mem:match cluster-id="cluster-2" seq-name="seq2" start="1" stop="47" evalue="nan" qvalue="nan">CCCGGGTTAAGATTGACAGATGATGACACGAGGGAGAGAGGATTTAT
+</mem:match>
+</multi-pattern-scan>
+
+</cis-element-search>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<job1_motifsXML version="4.8.1" release="0 EST 20">
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation=  xmlns:mhmmscan="http://noble.gs.washington.edu/schema/fimo"
+>
+<command-line>./openMotif</command-line>
+<sequence-data num-sequences="2" num-residues="90" />
+<alphabet>nucleotide</alphabet>
+<motif name="CCGGT" width="5"  best-possible-match="     "/>
+<motif name="TTAA" width="4"  best-possible-match="    "/>
+<cisml-file>job1_cisml.xml</cisml-file>
+</job1_motifsXML>
