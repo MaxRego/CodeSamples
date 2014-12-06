@@ -1,0 +1,12 @@
+drop table gene;
+
+create table gene(
+	geneid int not null auto_increment,
+	ID varchar(80) not null,
+	name varchar(80) not null,
+	to_species varchar(80) not null,
+	to_id varchar(80) not null,
+	to_name varchar(80) not null,
+	target varchar(80) not null,
+	primary key(geneid)
+);

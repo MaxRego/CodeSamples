@@ -1,0 +1,31 @@
+<tool id="flankRegions" name="Orthologous Gene Retrieval">
+  	<description>: Find flanking regions for orthogous genes to Drosophila Melanogaster. </description>
+  	<command interpreter="perl"> query_dmel.pl $jid $nameFile $upLength $downLength $species $outFile </command>
+
+  	<inputs>
+    	<param name="nameFile" format="text" type="data" label="Input Names File"/>
+  		
+  		<param name="upLength" size="6" type="integer" optional="false"  value="" label="Upstream Flank Length" />
+  		
+      <param name="downLength" size="6" type="integer" optional="false"  value="" label="Downstream Flank Length" />
+      
+      <param  name="species" type="select" multiple="true" display="checkboxes" force_select="true" label="Choose all species to search for orthougous genes">
+              <option value ="Ananassae"> Ananassae </option>
+              <option value ="Erecta"> Erecta </option>
+              <option value ="Sechellia"> Sechellia </option>
+              <option value ="Simulans"> Simulans </option>
+              <option value ="Yakuba"> Yakuba </option>
+      </param>
+
+  		<param name="jid" type="text" optional="false"  value="Default" label="Job ID" />	
+  		   		  	 
+  	</inputs>
+
+	<outputs>
+		<data format="csv" name="outFile" label="Flanking Region Results"/>
+	</outputs>
+
+	<help>
+		This module is used to query the database for upstream and downstream flanking regions of genes orthogous to Drosophila Melanogaster. The names file should contain gene names to find in each select species. Select which species to search for orthougous genes in the checkboxes above.
+	</help>
+</tool>
